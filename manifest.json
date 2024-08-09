@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Block 0.0.0.0 Connections",
+  "version": "1.0",
+  "description": "Blocks all connections to 0.0.0.0.",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "webNavigation",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "0blocker48.png",
+      "128": "0blocker.png"
+    }
+  },
+  "icons": {
+    "48": "0blocker48.png",
+    "128": "0blocker.png"
+  }
+}
+
